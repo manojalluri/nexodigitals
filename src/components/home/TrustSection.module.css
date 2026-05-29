@@ -1,0 +1,67 @@
+.trustSection {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--glass-border);
+  background: rgba(255,255,255,0.02);
+  overflow: hidden;
+}
+
+.label {
+  text-align: center;
+  color: var(--muted-text);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.marquee::before, .marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, var(--premium-black) 0%, transparent 100%);
+}
+
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, var(--premium-black) 0%, transparent 100%);
+}
+
+.marqueeContent {
+  display: flex;
+  width: fit-content;
+  animation: scroll 30s linear infinite;
+  gap: 40px;
+}
+
+.logoItem {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.4);
+  white-space: nowrap;
+  padding: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.logoItem:hover {
+  color: var(--white);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% / 3)); }
+}

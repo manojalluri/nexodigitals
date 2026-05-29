@@ -1,0 +1,136 @@
+.contentSection {
+  background-color: var(--premium-black);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.featureCard {
+  padding: 32px;
+  transition: transform 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 102, 255, 0.3);
+}
+
+.checkIcon {
+  color: var(--primary-blue);
+  margin-bottom: 20px;
+}
+
+.featureTitle {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.featureDesc {
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+/* Pricing Section */
+.pricingSection {
+  background-color: var(--dark-navy);
+  border-top: 1px solid var(--glass-border);
+}
+
+.pricingSub {
+  color: var(--muted-text);
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .pricingGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pricingCard {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.popular {
+  border-color: var(--primary-blue);
+  box-shadow: 0 10px 40px rgba(0, 102, 255, 0.15);
+  transform: scale(1.02);
+}
+
+.popularBadge {
+  position: absolute;
+  top: 16px;
+  right: -30px;
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 6px 40px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transform: rotate(45deg);
+}
+
+.planName {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: var(--white);
+  font-family: var(--font-heading);
+}
+
+.planPrice {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  margin-bottom: 30px;
+}
+
+.planBenefits {
+  list-style: none;
+  flex-grow: 1;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.planBenefits li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted-text);
+}
+
+.benefitIcon {
+  color: var(--success);
+}
+
+.planBtn {
+  width: 100%;
+}
