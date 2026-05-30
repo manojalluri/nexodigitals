@@ -24,17 +24,30 @@
 }
 
 .brandCol .logo {
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: -0.5px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
   margin-bottom: 16px;
 }
 
-.brandCol .logo span {
-  color: var(--primary-blue);
+.brandCol .logoImage {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.brandCol .logoText {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.brandCol .logoText span {
+  color: var(--accent-orange);
 }
 
 .description {

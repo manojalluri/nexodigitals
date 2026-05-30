@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Phone, MessageCircle, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -34,7 +35,8 @@ export default function Navbar() {
       <div className={`container ${styles.navContainer}`}>
         {/* Logo */}
         <Link href="/" className={styles.logo}>
-          Nexo <span>Digitals</span>
+          <Image src="/logo.png" alt="Nexo Digitals Logo" width={60} height={60} className={styles.logoImage} priority />
+          <span className={styles.logoText}>NEXO <span>Digitals</span></span>
         </Link>
 
         {/* Desktop Navigation */}

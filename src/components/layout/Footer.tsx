@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import styles from './Footer.module.css';
@@ -9,7 +10,8 @@ export default function Footer() {
       <div className={`container ${styles.footerGrid}`}>
         <div className={styles.brandCol}>
           <Link href="/" className={styles.logo}>
-            Nexo <span>Digitals</span>
+            <Image src="/logo.png" alt="Nexo Digitals Logo" width={80} height={80} className={styles.logoImage} />
+            <span className={styles.logoText}>NEXO <span>Digitals</span></span>
           </Link>
           <p className={styles.description}>
             Helping businesses in Vijayawada and across India generate more leads, increase revenue, and build powerful brands through strategic digital marketing solutions.
