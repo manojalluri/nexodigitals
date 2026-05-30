@@ -18,7 +18,7 @@ export default function FinalCTA() {
               <Link href="/contact" className={`btn-primary ${styles.btnPrimary}`}>
                 Book Free Consultation <ArrowRight size={18} />
               </Link>
-              <a href="tel:+919876543210" className={`btn-secondary ${styles.btnSecondary}`}>
+              <a href="tel:+918886969130" className={`btn-secondary ${styles.btnSecondary}`}>
                 <Phone size={18} /> Call Now
               </a>
             </div>

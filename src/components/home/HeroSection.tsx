@@ -80,7 +80,7 @@ export default function HeroSection() {
               <Link href="/contact" className="btn-primary">
                 Book Free Consultation <ArrowRight size={17} />
               </Link>
-              <a href="tel:+919876543210" className="btn-secondary">
+              <a href="tel:+918886969130" className="btn-secondary">
                 <PhoneCall size={17} /> Call Now
               </a>
             </div>

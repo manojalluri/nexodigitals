@@ -109,7 +109,7 @@ export default function LeadMagnet() {
                   <div className={styles.inputGroup}>
                     <input 
                       type="tel" 
-                      placeholder="Phone Number (e.g. 9876543210)" 
+                      placeholder="Phone Number (e.g. 8886969130)" 
                       className={`${styles.input} ${errors.phone ? styles.inputError : ''}`}
                       {...register('phone')}
                     />

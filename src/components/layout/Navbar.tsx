@@ -35,8 +35,18 @@ export default function Navbar() {
       <div className={`container ${styles.navContainer}`}>
         {/* Logo */}
         <Link href="/" className={styles.logo}>
-          <Image src="/logo.png" alt="Nexo Digitals Logo" width={60} height={60} className={styles.logoImage} priority />
-          <span className={styles.logoText}>NEXO <span>Digitals</span></span>
+          <Image src="/logo.png" alt="Nexo Digitals Logo" width={60} height={60} className={styles.logoImage} priority unoptimized />
+          <div className={styles.logoText}>
+            <span className={styles.logoTextNexo}>
+              NE
+              <svg viewBox="0 0 100 100" className={styles.svgX} aria-label="X">
+                <path d="M 0,0 L 35,0 L 100,100 L 65,100 Z" fill="var(--primary-blue)" />
+                <path d="M 65,0 L 100,0 L 35,100 L 0,100 Z" fill="var(--accent-orange)" />
+              </svg>
+              O
+            </span>
+            <span className={styles.logoTextDigitals}>Digitals</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
@@ -99,10 +109,10 @@ export default function Navbar() {
 
             {/* Mobile Quick Actions */}
             <div className={styles.mobileContactRow}>
-              <a href="tel:+919876543210" className={styles.mobileContactBtn}>
+              <a href="tel:+918886969130" className={styles.mobileContactBtn}>
                 <Phone size={16} /> Call Now
               </a>
-              <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className={styles.mobileContactBtn}>
+              <a href="https://wa.me/918886969130" target="_blank" rel="noreferrer" className={styles.mobileContactBtn}>
                 <MessageCircle size={16} /> WhatsApp
               </a>
             </div>

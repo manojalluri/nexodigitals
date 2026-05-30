@@ -10,8 +10,18 @@ export default function Footer() {
       <div className={`container ${styles.footerGrid}`}>
         <div className={styles.brandCol}>
           <Link href="/" className={styles.logo}>
-            <Image src="/logo.png" alt="Nexo Digitals Logo" width={80} height={80} className={styles.logoImage} />
-            <span className={styles.logoText}>NEXO <span>Digitals</span></span>
+            <Image src="/logo.png" alt="Nexo Digitals Logo" width={80} height={80} className={styles.logoImage} unoptimized />
+            <div className={styles.logoText}>
+              <span className={styles.logoTextNexo}>
+                NE
+                <svg viewBox="0 0 100 100" className={styles.svgX} aria-label="X">
+                  <path d="M 0,0 L 35,0 L 100,100 L 65,100 Z" fill="var(--primary-blue)" />
+                  <path d="M 65,0 L 100,0 L 35,100 L 0,100 Z" fill="var(--accent-orange)" />
+                </svg>
+                O
+              </span>
+              <span className={styles.logoTextDigitals}>Digitals</span>
+            </div>
           </Link>
           <p className={styles.description}>
             Helping businesses in Vijayawada and across India generate more leads, increase revenue, and build powerful brands through strategic digital marketing solutions.
@@ -51,11 +61,11 @@ export default function Footer() {
           <ul className={styles.contactList}>
             <li>
               <Phone size={18} className={styles.contactIcon} />
-              <a href="tel:+919876543210">+91 98765 43210</a>
+              <a href="tel:+918886969130">+91 88869 69130</a>
             </li>
             <li>
               <Mail size={18} className={styles.contactIcon} />
-              <a href="mailto:hello@nexodigitals.com">hello@nexodigitals.com</a>
+              <a href="mailto:nexodigitals00@gmail.com">nexodigitals00@gmail.com</a>
             </li>
             <li>
               <MapPin size={18} className={styles.contactIcon} />

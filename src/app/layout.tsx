@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Orbitron } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import MobileBottomNav from "@/components/layout/MobileBottomNav";
+import StickyWhatsApp from "@/components/layout/StickyWhatsApp";
 import "./globals.css";
 
 const inter = Inter({
@@ -12,6 +13,11 @@ const inter = Inter({
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-heading",
+  subsets: ["latin"],
+});
+
+const orbitron = Orbitron({
+  variable: "--font-logo",
   subsets: ["latin"],
 });
 
@@ -26,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfairDisplay.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfairDisplay.variable} ${orbitron.variable}`}>
       <body>
         <Navbar />
         <main style={{ minHeight: '100vh' }}>
@@ -34,6 +40,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <MobileBottomNav />
+        <StickyWhatsApp />
       </body>
     </html>
   );

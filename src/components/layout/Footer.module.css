@@ -38,16 +38,42 @@
 }
 
 .brandCol .logoText {
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: -0.5px;
+  display: flex;
+  align-items: baseline;
+  white-space: nowrap;
   line-height: 1;
 }
 
-.brandCol .logoText span {
+.brandCol .logoTextNexo {
+  font-family: var(--font-logo);
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--white);
+  line-height: 1;
+}
+
+.brandCol .svgX {
+  height: 0.8em;
+  width: auto;
+  display: inline-block;
+  margin: 0 0.05em;
+  vertical-align: baseline;
+}
+
+.brandCol .logoTextDigitals {
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  font-weight: 600;
   color: var(--accent-orange);
+  margin-left: 10px;
+  letter-spacing: -0.5px;
+}
+
+.brandCol .logoTextNexo {
+  font-family: var(--font-logo);
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .description {

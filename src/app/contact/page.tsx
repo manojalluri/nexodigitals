@@ -67,7 +67,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div style={{ fontSize: '0.9rem', color: 'var(--muted-text)' }}>Phone Number</div>
-                      <a href="tel:+919876543210" style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--white)' }}>+91 98765 43210</a>
+                      <a href="tel:+918886969130" style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--white)' }}>+91 88869 69130</a>
                     </div>
                   </div>
                   
@@ -77,7 +77,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div style={{ fontSize: '0.9rem', color: 'var(--muted-text)' }}>WhatsApp</div>
-                      <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--white)' }}>Message Us</a>
+                      <a href="https://wa.me/918886969130" target="_blank" rel="noreferrer" style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--white)' }}>Message Us</a>
                     </div>
                   </div>
                   
@@ -87,7 +87,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div style={{ fontSize: '0.9rem', color: 'var(--muted-text)' }}>Email Address</div>
-                      <a href="mailto:hello@nexodigitals.com" style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--white)' }}>hello@nexodigitals.com</a>
+                      <a href="mailto:nexodigitals00@gmail.com" style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--white)' }}>nexodigitals00@gmail.com</a>
                     </div>
                   </div>
                   
