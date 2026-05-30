@@ -14,10 +14,10 @@ export default function Footer() {
             <div className={styles.logoText}>
               <span className={styles.logoTextNexo}>
                 NE
-                <svg viewBox="0 0 100 100" className={styles.svgX} aria-label="X">
-                  <path d="M 0,0 L 35,0 L 100,100 L 65,100 Z" fill="var(--primary-blue)" />
-                  <path d="M 65,0 L 100,0 L 35,100 L 0,100 Z" fill="var(--accent-orange)" />
-                </svg>
+                <span className={styles.xWrapper}>
+                  <span className={styles.xBlueLine}></span>
+                  <span className={styles.xOrangeLine}></span>
+                </span>
                 O
               </span>
               <span className={styles.logoTextDigitals}>Digitals</span>

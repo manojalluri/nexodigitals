@@ -61,12 +61,32 @@
   line-height: 1;
 }
 
-.svgX {
-  height: 0.8em;
-  width: auto;
+.xWrapper {
+  position: relative;
   display: inline-block;
+  width: 0.7em;
+  height: 0.72em;
   margin: 0 0.05em;
   vertical-align: baseline;
+}
+
+.xBlueLine, .xOrangeLine {
+  position: absolute;
+  top: 0;
+  left: 33%;
+  width: 34%;
+  height: 100%;
+  border-radius: 1px;
+}
+
+.xBlueLine {
+  background-color: var(--primary-blue);
+  transform: skewX(38deg);
+}
+
+.xOrangeLine {
+  background-color: var(--accent-orange);
+  transform: skewX(-38deg);
 }
 
 .logoTextDigitals {
@@ -78,10 +98,21 @@
   letter-spacing: -0.5px;
 }
 
-.logoTextNexo {
-  font-family: var(--font-logo);
-  font-weight: 800;
-  letter-spacing: 1px;
+@media (max-width: 768px) {
+  .logoImage {
+    width: 44px;
+    height: 44px;
+  }
+  .logoTextNexo {
+    font-size: 1.8rem;
+  }
+  .logoTextDigitals {
+    font-size: 1.1rem;
+    margin-left: 6px;
+  }
+  .xWrapper {
+    /* No scale needed, uses font size */
+  }
 }
 
 /* ---- Desktop Nav ---- */

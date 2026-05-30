@@ -53,12 +53,32 @@
   line-height: 1;
 }
 
-.brandCol .svgX {
-  height: 0.8em;
-  width: auto;
+.brandCol .xWrapper {
+  position: relative;
   display: inline-block;
+  width: 0.7em;
+  height: 0.72em;
   margin: 0 0.05em;
   vertical-align: baseline;
+}
+
+.brandCol .xBlueLine, .brandCol .xOrangeLine {
+  position: absolute;
+  top: 0;
+  left: 33%;
+  width: 34%;
+  height: 100%;
+  border-radius: 1px;
+}
+
+.brandCol .xBlueLine {
+  background-color: var(--primary-blue);
+  transform: skewX(38deg);
+}
+
+.brandCol .xOrangeLine {
+  background-color: var(--accent-orange);
+  transform: skewX(-38deg);
 }
 
 .brandCol .logoTextDigitals {
@@ -68,6 +88,23 @@
   color: var(--accent-orange);
   margin-left: 10px;
   letter-spacing: -0.5px;
+}
+
+@media (max-width: 768px) {
+  .brandCol .logoImage {
+    width: 56px;
+    height: 56px;
+  }
+  .brandCol .logoTextNexo {
+    font-size: 2rem;
+  }
+  .brandCol .logoTextDigitals {
+    font-size: 1.3rem;
+    margin-left: 8px;
+  }
+  .brandCol .xWrapper {
+    /* No scale needed, uses font size */
+  }
 }
 
 .brandCol .logoTextNexo {
