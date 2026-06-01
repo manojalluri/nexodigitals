@@ -59,7 +59,7 @@ export default function ResultsSection() {
           >
             <h2 className="heading-secondary">Proven <span className="text-gradient">Results</span> That Speak For Themselves</h2>
             <p className={styles.description}>
-              We don't just run campaigns; we build growth engines. Our data-driven approach ensures every rupee spent delivers measurable ROI.
+              We don&apos;t just run campaigns; we build growth engines. Our data-driven approach ensures every rupee spent delivers measurable ROI.
             </p>
           </motion.div>
         </div>

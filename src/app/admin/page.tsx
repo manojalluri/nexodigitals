@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { Users, BookOpen, Briefcase, TrendingUp, BarChart, Settings, Mail } from 'lucide-react';
+import { Users, TrendingUp, BarChart, Settings, Mail } from 'lucide-react';
 
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState('overview');

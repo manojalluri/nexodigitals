@@ -30,14 +30,6 @@ export default function TestimonialsSection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleScroll = () => {
-    if (!scrollContainerRef.current) return;
-    const { scrollLeft, clientWidth } = scrollContainerRef.current;
-    const newIndex = Math.round(scrollLeft / clientWidth);
-    if (newIndex !== activeIndex) {
-      setActiveIndex(newIndex);
-    }
-  };
 
   const scrollTo = (index: number) => {
     if (!scrollContainerRef.current) return;
@@ -58,6 +50,16 @@ export default function TestimonialsSection() {
 
   useEffect(() => {
     const currentRef = scrollContainerRef.current;
+    
+    const handleScroll = () => {
+      if (!currentRef) return;
+      const { scrollLeft, clientWidth } = currentRef;
+      const newIndex = Math.round(scrollLeft / clientWidth);
+      if (newIndex !== activeIndex) {
+        setActiveIndex(newIndex);
+      }
+    };
+
     if (currentRef) {
       currentRef.addEventListener('scroll', handleScroll);
       return () => currentRef.removeEventListener('scroll', handleScroll);
@@ -69,7 +71,7 @@ export default function TestimonialsSection() {
       <div className={`container ${styles.container}`}>
         <div className={styles.header}>
           <h2 className="heading-secondary">What Our <span className="text-gradient">Clients</span> Say</h2>
-          <p className={styles.subtitle}>Don't just take our word for it. Here is what business owners have to say about working with Nexo Digitals.</p>
+          <p className={styles.subtitle}>Don&apos;t just take our word for it. Here is what business owners have to say about working with Nexo Digitals.</p>
         </div>
 
         <div className={styles.carouselContainer}>
@@ -91,7 +93,7 @@ export default function TestimonialsSection() {
                 ))}
               </div>
 
-              <p className={styles.text}>"{testimonial.text}"</p>
+              <p className={styles.text}>&quot;{testimonial.text}&quot;</p>
               
               <div className={styles.author}>
                 <div className={styles.name}>{testimonial.name}</div>

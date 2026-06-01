@@ -147,7 +147,7 @@ export default async function ServicePage({ params }: Props) {
       <section className={`section-padding ${styles.contentSection}`}>
         <div className={`container`}>
           <div className={styles.sectionHeader}>
-            <h2 className="heading-secondary">What's Included in our <span className="text-gradient">Service</span></h2>
+            <h2 className="heading-secondary">What&apos;s Included in our <span className="text-gradient">Service</span></h2>
           </div>
           
           <div className={styles.featuresGrid}>

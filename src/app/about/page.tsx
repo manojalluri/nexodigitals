@@ -26,7 +26,7 @@ export default function AboutPage() {
               We believe that every business, regardless of size, deserves enterprise-grade marketing solutions.
             </p>
             <p style={{ color: 'var(--muted-text)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '32px' }}>
-              Located in the heart of Vijayawada, we've built a team of specialized experts across SEO, Paid Advertising, Social Media, and Web Development.
+              Located in the heart of Vijayawada, we&apos;ve built a team of specialized experts across SEO, Paid Advertising, Social Media, and Web Development.
             </p>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '16px', listStyle: 'none' }}>
               <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--white)', fontWeight: 600 }}><CheckCircle2 color="var(--success)"/> Data-Driven Strategies</li>
