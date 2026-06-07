@@ -162,30 +162,7 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      <section className={`section-padding ${styles.pricingSection}`}>
-        <div className={`container`}>
-          <div className={styles.sectionHeader}>
-            <h2 className="heading-secondary">Transparent <span className="text-gradient">Pricing</span></h2>
-            <p className={styles.pricingSub}>Premium services structured for measurable ROI.</p>
-          </div>
 
-          <div className={styles.pricingGrid}>
-            {service.pricing.map((plan, i) => (
-              <div key={i} className={`glass-panel ${styles.pricingCard} ${i === 1 ? styles.popular : ''}`}>
-                {i === 1 && <div className={styles.popularBadge}>Most Popular</div>}
-                <h3 className={styles.planName}>{plan.name}</h3>
-                <div className={styles.planPrice}>{plan.price}</div>
-                <ul className={styles.planBenefits}>
-                  {plan.benefits.map((benefit, j) => (
-                    <li key={j}><CheckCircle2 size={18} className={styles.benefitIcon}/> {benefit}</li>
-                  ))}
-                </ul>
-                <button className={`btn-primary ${styles.planBtn}`}>Choose Plan</button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <FinalCTA />
     </>

@@ -17,24 +17,34 @@ export default function AboutPage() {
         subtitle="We are a premium digital marketing agency driven by data, creativity, and a relentless focus on ROI."
       />
       
-      <section className="section-padding" style={{ backgroundColor: 'var(--premium-black)' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '60px', alignItems: 'center' }}>
-          <div>
-            <h2 className="heading-secondary" style={{ marginBottom: '24px' }}>Our <span className="text-gradient">Mission</span></h2>
-            <p style={{ color: 'var(--muted-text)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '24px' }}>
+      <section className="section-padding" style={{ backgroundColor: 'var(--premium-black)', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '800px', height: '800px', background: 'radial-gradient(circle, var(--primary) 0%, transparent 60%)', opacity: 0.05, pointerEvents: 'none' }} />
+        
+        <div className="container" style={{ position: 'relative', zIndex: 1, maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 className="heading-secondary" style={{ marginBottom: '40px' }}>Our <span className="text-gradient">Mission</span></h2>
+          
+          <div className="glass-panel" style={{ padding: '48px', borderRadius: '24px', marginBottom: '48px', textAlign: 'left' }}>
+            <p style={{ color: 'var(--muted-text)', fontSize: '1.2rem', lineHeight: 1.8, marginBottom: '24px' }}>
               At Nexo Digitals, our mission is simple: to help ambitious businesses scale profitably through world-class digital marketing and web development. 
               We believe that every business, regardless of size, deserves enterprise-grade marketing solutions.
             </p>
-            <p style={{ color: 'var(--muted-text)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '32px' }}>
+            <p style={{ color: 'var(--muted-text)', fontSize: '1.2rem', lineHeight: 1.8 }}>
               Located in the heart of Vijayawada, we&apos;ve built a team of specialized experts across SEO, Paid Advertising, Social Media, and Web Development.
             </p>
-            <ul style={{ display: 'flex', flexDirection: 'column', gap: '16px', listStyle: 'none' }}>
-              <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--white)', fontWeight: 600 }}><CheckCircle2 color="var(--success)"/> Data-Driven Strategies</li>
-              <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--white)', fontWeight: 600 }}><CheckCircle2 color="var(--success)"/> Transparent Reporting</li>
-              <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--white)', fontWeight: 600 }}><CheckCircle2 color="var(--success)"/> Dedicated Account Managers</li>
-            </ul>
           </div>
-          <div className="glass-panel" style={{ height: '500px', backgroundImage: 'url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '24px' }} />
+
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
+            {[
+              "Data-Driven Strategies",
+              "Transparent Reporting",
+              "Dedicated Account Managers"
+            ].map((feature, i) => (
+              <div key={i} className="glass-panel" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '16px 28px', borderRadius: '100px' }}>
+                <CheckCircle2 color="var(--success)" size={20} />
+                <span style={{ color: 'var(--white)', fontWeight: 600 }}>{feature}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

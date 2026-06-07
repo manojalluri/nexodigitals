@@ -8,42 +8,36 @@ import styles from './ServicesPreview.module.css';
 const services = [
   {
     title: "SEO Services",
-    price: "Starting From ₹9,999/month",
     desc: "Rank higher on Google and drive organic traffic that converts into paying customers.",
     icon: <Search size={32} />,
     href: "/services/seo"
   },
   {
     title: "Google Ads",
-    price: "Starting From ₹15,000/month",
     desc: "High-ROI paid search campaigns targeting users actively looking for your services.",
     icon: <Target size={32} />,
     href: "/services/google-ads"
   },
   {
     title: "Meta Ads",
-    price: "Starting From ₹12,000/month",
     desc: "Advanced Facebook & Instagram advertising to scale your brand awareness and leads.",
     icon: <BarChart2 size={32} />,
     href: "/services/meta-ads"
   },
   {
     title: "Social Media",
-    price: "Starting From ₹8,999/month",
     desc: "Engaging content and community management to build a loyal audience.",
     icon: <Share2 size={32} />,
     href: "/services/social-media"
   },
   {
     title: "Website Development",
-    price: "Starting From ₹19,999",
     desc: "Premium, fast, and SEO-optimized websites designed to maximize conversions.",
     icon: <Code size={32} />,
     href: "/services/web-development"
   },
   {
     title: "Branding & Design",
-    price: "Custom Pricing",
     desc: "Logo design, brand identity, and marketing materials that make you stand out.",
     icon: <PenTool size={32} />,
     href: "/services/branding"
@@ -75,7 +69,6 @@ export default function ServicesPreview() {
               <h3 className={styles.cardTitle}>{service.title}</h3>
               <p className={styles.cardDesc}>{service.desc}</p>
               <div className={styles.cardBottom}>
-                <span className={styles.price}>{service.price}</span>
                 <Link href={service.href} className={styles.learnMore}>
                   Learn More <ArrowRight size={16} />
                 </Link>
