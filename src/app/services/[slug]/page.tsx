@@ -123,8 +123,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return { title: 'Service Not Found' };
   
   return {
-    title: `${service.title} ${service.gradientWord} | Nexo Digitals`,
-    description: service.subtitle,
+    title: `${service.title} ${service.gradientWord} in Vijayawada | Nexo Digitals`,
+    description: service.subtitle + " Serving Vijayawada and Andhra Pradesh.",
   };
 }
 
@@ -138,6 +138,25 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": `${service.title} ${service.gradientWord}`,
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Nexo Digitals"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Vijayawada"
+            },
+            "description": service.subtitle
+          })
+        }}
+      />
       <PageHeader 
         title={service.title} 
         gradientWord={service.gradientWord} 

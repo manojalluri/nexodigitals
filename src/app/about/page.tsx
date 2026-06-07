@@ -4,8 +4,8 @@ import FinalCTA from "@/components/home/FinalCTA";
 import { CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us | Nexo Digitals",
-  description: "Learn about Nexo Digitals, Vijayawada's premier digital marketing agency helping businesses scale.",
+  title: "About Nexo Digitals | Top Digital Marketing Agency in AP",
+  description: "Learn why Nexo Digitals is Vijayawada's most trusted digital marketing and web development agency. Data-driven strategies for measurable ROI.",
 };
 
 export default function AboutPage() {
