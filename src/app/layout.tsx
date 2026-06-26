@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import MobileBottomNav from "@/components/layout/MobileBottomNav";
 import StickyWhatsApp from "@/components/layout/StickyWhatsApp";
+import HostingLockScreen from "@/components/layout/HostingLockScreen";
 import "./globals.css";
 
 const inter = Inter({
@@ -78,6 +79,7 @@ export default function RootLayout({
         <Footer />
         <MobileBottomNav />
         <StickyWhatsApp />
+        <HostingLockScreen />
       </body>
     </html>
   );
